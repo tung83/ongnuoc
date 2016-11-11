@@ -36,7 +36,7 @@
                 <td align="center">
                     <span>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ VÀ TƯ VẤN V.T.L</span>
                     
-                              <em style="font-weight:bold;text-shadow:1px 1px #141414">Hotline: <a href="tel:0902757669" title="0902 757 669">0902 757 669</a> </em>
+                              <em style="font-weight:bold;text-shadow:1px 1px #141414">Hotline: <a href="tel:0902 757 469" title="0902 757 469">0902 757 469</a> - <a href="tel:0902 799 469" title="0902 799 469">0902 799 469</a> </em>
                               <em style="font-weight:bold; margin-top: 0; text-shadow:1px 1px #141414">Email: <a href="mailto:ongnuocmiennam@gmail.com" title="ongnuocmiennam@gmail.com">ongnuocmiennam@gmail.com</a>  </em>
                               
 
