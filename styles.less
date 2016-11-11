@@ -1,0 +1,176 @@
+@font-face{
+	font-family:"UVN Ky Thuat";
+	src:url("font/UVNKyThuat.TTF");
+}
+@font-face{
+	font-family:"UTM Yen Tu";
+	src:url("font/UTM Yen Tu.ttf");
+}
+@body-clr:#efefef;
+@slogan-clr:#0080e2;
+@top-bg: 'images/content/top_bg.png';
+
+
+
+body{background:@body-clr;margin:0;padding:0;font-size:12px;line-height:17px;font-family:arial}
+.clear{display:block;clear:both}
+a:active,
+a:hover {
+  outline: 0;
+}
+a:hover,a:focus{color:#23527c}
+a{text-decoration:none;color:#337ab7}
+.box-shadow{-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);}
+.top-margin{}
+.container{background:#fff;width:1004px;margin:auto;}
+.top{width:100%;height:114px;background:url(@top-bg) center top no-repeat}
+.top table{padding:0;border:none;height:114px;width:100%}
+.top table tr td:first-child{width:220px;text-align:center;vertical-align:middle}
+.top table tr td:last-child span{display:block;font-size:23px;color:#fff;text-align:center;font-weight:bold;font-family:times news roman;line-height:20px;text-shadow: 0px 0px 3px #000;line-height:23px}
+.top table tr td:last-child em{display:block;text-align:center;font-size:17px;margin-top:16px;color:@slogan-clr}
+.top .logo{
+    max-height:114px
+}
+.ground{width:984px;margin:10px auto;}
+.menu{width:100%;height:36px;padding:0;border:none;margin:0;border-collapse: collapse;text-align:center}
+.menu tr>td:first-child div{border-radius:5px 0px 0px 5px}
+.menu tr>td:last-child div{border-radius:0px 5px 5px 0px}
+.menu tr td{padding:0;margin:0}
+.menu tr td>div{width:100%;height:36px;background:url(images/content/menu_line.jpg) repeat-x;
+border:1px solid #ccc
+}
+.menu tr td>div:hover,.menu tr td>div.active{background:url(images/content/menu_line_hover.jpg) repeat-x;
+}
+.menu tr td>div:hover a,.menu tr td>div.active a{color:#fff600}
+.menu tr td>div a{color:#fff;line-height:36px;text-transform:uppercase;font-size:14px;display:block;height:36px;font-weight:bold
+    ;text-decoration:none
+}
+
+.foot_menu{
+    list-style:none;margin:0px auto 15px;padding:0;
+}
+.foot_menu li{
+    display:inline-block;margin-right:10px;margin-left:10px
+}
+.foot_menu a{
+    display:block;font-weight:bold;color:#004C96
+}
+
+.left,.right,.middle{margin-top:10px;margin-bottom:10px}
+.left,.right{width:198px;min-height:200px}
+.left{float:left}
+.right{float:right}
+.middle{float:left;margin-left:32px;width:544px;min-height:200px}
+.box{width:100%;margin-bottom:10px;}
+.box .box-title{font-size:16px;width:100%;height:40px;background:#0e6fcd;color:#fff;text-align:center;display:block;line-height:40px;border-radius:5px 5px 0px 0px;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0094e9+0,006fc1+50,207cca+52,0094e9+100 */
+background: #0094e9; /* Old browsers */
+background: -moz-linear-gradient(top,  #0094e9 0%, #006fc1 50%, #207cca 52%, #0094e9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #0094e9 0%,#006fc1 50%,#207cca 52%,#0094e9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #0094e9 0%,#006fc1 50%,#207cca 52%,#0094e9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0094e9', endColorstr='#0094e9',GradientType=0 ); /* IE6-9 */}
+
+
+
+.footer{background:#f3f3f3;width:1004px;margin:20px auto 0px;border-top:1px solid #f3f3f3;border-bottom:1px solid #f3f3f3}
+.the-right{width:150px;float:right;text-align:right}
+.the-right span{display:block;font-weight:bold}
+.the-right span em{font-style:normal;color:#2665b4}
+.the-left{float:left;width:800px}
+.company-name{color:#004C96;font-size:18px;font-weight:bold;text-transform:uppercase;display:block;text-align:center}
+.station{list-style:none;margin:0;padding:0;margin-top:10px}
+.station li{float:left;margin-right:24px;width:480px}
+.station li:nth-child(2n){margin-right:0px}
+.copy-right{padding:10px 0px;border-top:1px solid #ccc;margin-top:10px;clear:both;margin-top:10px}
+.breadcum{margin-bottom:10px;background:#f1f1f1;padding:5px 5px} 
+.breadcum a{color:#747474}
+.breadcum a:hover{color:#141414;text-decoration:none}
+.breadcum a:after{content:' > '}
+.breadcum a:last-child:after{content:''}  
+.head-title{color:#004c96;border-bottom:1px solid #004c96;font-size:16px;font-weight:bold;margin-bottom:10px}
+.head-title span{display:inline-block;border-bottom:1px solid #004c96;padding-bottom:5px;text-transform:uppercase}
+
+
+.news-list{list-style:none;margin:0;padding:0}
+.news-list li{margin-bottom:10px;padding-bottom:10px}
+.news-list li img{display:block;width:180px;float:left}
+.news-list li div{width:354px;float:right}
+.news-list li div h2{margin-top:0px;margin-bottom:5px;font-size:16px}
+.news-list li div em{color:#ccc;display:block}
+
+.article-heading{color:#004c96}
+.other-article{color:#004c96;border-bottom:1px solid #004c96;margin-top:20px}
+
+.temp_news{list-style:none;margin:0;padding:0}
+.temp_news li{margin-bottom:10px}
+.temp_news .big_item{
+   
+}
+.temp_news .big-item img{width:100%;display:block}
+.temp_news .big-item h2{margin-top:5px;margin-bottom:5px;font-size:16px}
+
+.temp_news .small-item img{width:80px;display:block;float:left}
+.temp_news .small-item h2{margin-top:0px;margin-bottom:0px;float:right;width:108px;font-size:12px}
+
+.search-box{border:1px solid #ccc;background:#f2f2f2;padding:5px;border-radius:0px 0px 5px 5px}
+
+
+
+.search-box table {
+                width:178px;
+                margin:0px auto
+}
+.search-box table td{padding:0}
+.search {
+                height:22px;border:1px solid #e9e9e9;width:135px;padding-left:5px;padding-right:5px
+}
+.button {
+                border:none;background:url(images/content/search_button.jpg) no-repeat;display:block;width:29px;height:24px;text-indent:-9999px
+}
+.button:hover  {
+                cursor:pointer
+}
+
+
+.catalogue{list-style:none;margin:0;padding:0;width:100%}
+.catalogue>li{width:196px;border:1px solid #badbf4;border-top:none;background:#fff;position:relative;z-index:150}
+.catalogue>li>span{padding:12px 10px;color:#0059af;display:block;background-repeat:no-repeat;background-position:5px 10px;padding-left:25px;font-weight:bold}
+.catalogue>li>span:hover{color:#141414}
+.catalogue ul{list-style:none;margin:0;padding:0;display:none;width:196px;border:1px solid #badbf4;top:0px;background:#e8f6ff}
+.catalogue>li:hover ul{display:block;;position:absolute;left:196px}
+.catalogue ul li{color:#141414;font-weight:bold;border-bottom:1px solid #badbf4}
+.catalogue ul li:last-child{border-bottom:none}
+.catalogue ul li a{color:#0059af;display:block;padding:12px 10px;background:none}
+.catalogue ul li a:hover{color:#141414}
+
+.product_list{list-style:none;margin:0;padding:0;width:100%}
+.product_list li{float:left;width:162px;margin-bottom:20px;margin-right:29px}
+.product_list li:nth-child(3n){margin-right:0px}
+.product_list li img{width:162px;display:block;border:none;margin-bottom:5px}
+.product_list li em{display:block;text-align:center;color:#f00;font-weight:bold}
+.product_list li span{font-weight:bold;text-align:center;display:block}
+.product img{float:left;display:block;width:200px;border:1px solid #ccc}
+.product>div{float:right;width:320px}
+.product>div h1{margin-top:0px;border-bottom:1px solid #ccc;padding-bottom:10px;font-size:18px;line-height:20px;color:#005ab2}
+.product>div em{color:#f00;display:block;font-weight:bold;font-size:16px;margin-bottom:10px;font-style:normal}
+
+.cate-title{
+    border-bottom:2px solid #000033
+}
+.cate-title span{display:inline-block;font-size:14px;color:#fff;background:#000033;padding:10px 20px;text-transform:uppercase}
+.cate-title a{display:block;float:right;padding:10px 20px}
+.online_support{border:1px solid #ccc}
+.support_box{width:172px;margin:10px auto;}
+.support_box>span{display:block;width:100%;color:#fff;background:#c19a43;font-weight:bold;text-align:center;height:30px;line-height:30px;border-radius:10px}
+.support_box>ul{list-style:none;margin:0 auto;padding:0;width:160px;}
+.support_box>ul li{border-bottom:1px solid #e9e9e9;padding:10px 0px}
+.hotline_support{text-align:center;font-weight:bold;color:#f00;font-size:14px}
+.hotline_support i{border:1px solid #f00;border-radius:50%;padding:5px;display:inline-block;color:#f00}
+.support_box ul li span{font-weight:bold;display:block;margin-bottom:5px;color:#0059af}
+.left_sp{float:left;width:120px}
+.right_sp{width:22px;float:right;margin-top:-3px}
+
+.download-list{list-style:none;margin:0;margin-top:10px;padding:0}
+.download-list li{margin-bottom:5px}
+.download-list li:before{content: '\203A '}
