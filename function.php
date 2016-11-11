@@ -923,27 +923,28 @@ function station()
 }
 function left_module()
 {
-    $str='
-    <div class="box">
-        <span class="box-title">Tìm Kiếm Sản Phẩm</span>
-        <div class="search-box clearfix">
-        <form action="'.myWeb.'index.php">
-        <table cellpadding="0" cellspacing="0" border="0">
-            <tr>
-                <td>
-                    <input type="hidden" value="tim-kiem" name="view"/>
-                    <input type="text" name="hint" required placeholder="Tên sản phẩm..." required class="search">
-                </td>
-                <td>
-                    <input type="submit" value="GO" class="button"/>
-                </td>
-            </tr>
-        </table>
-        </form>
-        </div>
-    </div>
-    ';
-    $str.=catalogue()  ;
+//    $str='
+//    <div class="box">
+//        <span class="box-title">Tìm Kiếm Sản Phẩm</span>
+//        <div class="search-box clearfix">
+//        <form action="'.myWeb.'index.php">
+//        <table cellpadding="0" cellspacing="0" border="0">
+//            <tr>
+//                <td>
+//                    <input type="hidden" value="tim-kiem" name="view"/>
+//                    <input type="text" name="hint" required placeholder="Tên sản phẩm..." required class="search">
+//                </td>
+//                <td>
+//                    <input type="submit" value="GO" class="button"/>
+//                </td>
+//            </tr>
+//        </table>
+//        </form>
+//        </div>
+//    </div>
+//    ';
+    $str.=catalogue();    
+    $str.=support_online();
     //$str.=temp_about();
     //$str.=multi_cate(1);
     $str.=multi_cate(0);
@@ -1116,7 +1117,6 @@ function temp_about()
 function right_module()
 {
     $str='';
-    $str.=support_online();
     $str.=temp_news();
     return $str;
 }
