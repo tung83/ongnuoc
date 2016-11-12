@@ -158,7 +158,7 @@ function home()
         </span>
     </div>
     ';
-    $str.=product_index();
+    $str.=product_all();
     
     //$str.=project_index();
     return $str;
@@ -944,7 +944,8 @@ function left_module()
 //    </div>
 //    ';
     $str.=catalogue();    
-    $str.=support_online();
+    $str.=support_online();    
+    $str.=temp_news();
     //$str.=temp_about();
     //$str.=multi_cate(1);
     $str.=multi_cate(0);
@@ -1117,7 +1118,6 @@ function temp_about()
 function right_module()
 {
     $str='';
-    $str.=temp_news();
     return $str;
 }
 function temp_news()
@@ -1477,7 +1477,7 @@ function product_all()
 {
     $cate=mysql_query("select id,title from cata_sub where active=1 order by id desc");
     while($cate_item=mysql_fetch_object($cate)){
-        $tab=mysql_query("select id from product where pId=$cate_item->id and active=1 order by id desc limit 3");
+        $tab=mysql_query("select id from product where pId=$cate_item->id and active=1 order by id desc ");
         $count=mysql_num_rows($tab);
         if($count>0){
             $str.='
@@ -1485,7 +1485,7 @@ function product_all()
             <a href="'.myWeb.'san-pham/'.slug($cate_item->title).'-'.$cate_item->id.'.html">
                 <i class="fa fa-bell-o"> Xem tất cả</a></i></h2>';
             $str.='
-            <ul class="product_list clearfix">';
+            <ul class="slick product_list clearfix">';
             while($row=mysql_fetch_object($tab))
             {
                 $str.='<li>'.product_list_item($row->id).'</li>';
@@ -1504,8 +1504,8 @@ function product_list_item($id)
     $str='
     <a href="'.myWeb.'san-pham/'.slug($row->title).'-i'.$row->id.'.html">
     <img src="'.webPath.$row->img.'"/>
-    <em>'.$price.'</em>
     <span>'.$row->title.'</span>
+    <em>'.$price.'</em>
     ';
     $str.='
     </a>';
@@ -1625,6 +1625,7 @@ $(".image-popup").magnificPopup({
         <div>
             <h1>'.$row->title.'</h1>
             <em>Giá : '.$price.'</em>
+            <p><i>Giá trên web chỉ mang tính chất tham khảo.</i></p>
             <span>'.nl2br($row->feature).'</span>
         </div>
     </div>
@@ -1655,7 +1656,7 @@ $(".image-popup").magnificPopup({
     if(mysql_num_rows($tb)>0){
         $str.='<h3 class="other-article">Sản phẩm khác</h3>';    
         $str.='
-        <ul class="product_list clearfix">';
+        <ul class="slick product_list clearfix">';
         //$sql="select id from product where active=1 and pId=$pId order by id desc limit 20";
         //$tab=mysql_query($sql);
         while($r=mysql_fetch_object($tb))

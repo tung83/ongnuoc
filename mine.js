@@ -1,4 +1,4 @@
-$('.carousel').carousel();
+
 
 // JavaScript Document
 function keypress(e)
@@ -84,3 +84,16 @@ $('.simple-ajax-popup-align-top').magnificPopup({
           overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
         });// JavaScript Document
         
+
+$(function() {
+    // slick
+    $('.slick').slick({
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        infinite: true,
+        speed: 100,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    });
+    });

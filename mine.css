@@ -244,3 +244,17 @@ ul { padding: 0; }
   background-color: #fff;
   cursor: default;
 }
+.slick{
+    height: 256px;
+}
+.slick a img{
+    width: 100%;
+    height: auto;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: slick;
+    color: #23527c !important;
+}
+#tabs table{
+    max-width: 700px !important;
+}

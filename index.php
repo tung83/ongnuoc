@@ -10,12 +10,13 @@
 <link rel="stylesheet" href="<?php echo myWeb;?>dist/magnific-popup.css"/>
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="<?php echo myWeb;?>font-awesome.min.css"/>
+<link rel="stylesheet" href="<?php echo myWeb;?>css/slick.css"/>
 
 <!-- Magnific Popup core JS file -->
 
 <script src="<?php echo myWeb;?>js/jquery.js" type="text/javascript"></script>
 <script src="<?php echo myWeb;?>dist/jquery.magnific-popup.js"></script>
-<script src="<?php echo myWeb;?>js/stickyMojo.js" type="text/javascript"></script>
+<script src="<?php echo myWeb;?>js/slick.js" type="text/javascript"></script>
 
 <!--wow slider-->
 
@@ -68,9 +69,6 @@
             
             
         </div>
-<!--        <div class="right">
-            //<?php echo right_module();?>
-        </div>-->
         <div class="clear"></div>
     </div>
 
