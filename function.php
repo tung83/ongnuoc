@@ -1485,7 +1485,7 @@ function product_all()
             <a href="'.myWeb.'san-pham/'.slug($cate_item->title).'-'.$cate_item->id.'.html">
                 <i class="fa fa-bell-o"> Xem tất cả</a></i></h2>';
             $str.='
-            <ul class="slick product_list clearfix">';
+            <ul class="slick product_list_slick clearfix">';
             while($row=mysql_fetch_object($tab))
             {
                 $str.='<li>'.product_list_item($row->id).'</li>';
@@ -1656,7 +1656,7 @@ $(".image-popup").magnificPopup({
     if(mysql_num_rows($tb)>0){
         $str.='<h3 class="other-article">Sản phẩm khác</h3>';    
         $str.='
-        <ul class="slick product_list clearfix">';
+        <ul class="slick product_list_slick clearfix">';
         //$sql="select id from product where active=1 and pId=$pId order by id desc limit 20";
         //$tab=mysql_query($sql);
         while($r=mysql_fetch_object($tb))
