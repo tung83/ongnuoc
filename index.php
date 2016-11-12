@@ -15,9 +15,10 @@
 <!-- Magnific Popup core JS file -->
 
 <script src="<?php echo myWeb;?>js/jquery.js" type="text/javascript"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="<?php echo myWeb;?>dist/jquery.magnific-popup.js"></script>
 <script src="<?php echo myWeb;?>js/slick.js" type="text/javascript"></script>
-
+</script>
 <!--wow slider-->
 
 <link rel="stylesheet" type="text/css" href="<?php echo myWeb;?>engine/style.css" />
@@ -25,9 +26,11 @@
 
 
 </head>
-<body style="">
+<body>
 
-<div class="container box-shadow">
+<div id="banner_l" class="banner"></div>
+<div id="banner_r" class="banner"></div>
+<div id="wrapper" class="container box-shadow">
     <div class="top">
         <table>
             <tr>
